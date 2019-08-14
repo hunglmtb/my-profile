@@ -206,3 +206,4 @@ app/schemas/
 room/
 *.pdf
 *.bak.*
+wkhtmltox/
