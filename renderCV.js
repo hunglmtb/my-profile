@@ -11,9 +11,9 @@ const personalProjects = [
     {   name: "Pyno",
         descriptionName: "App Chat History For Facebook on Android",
         content: [
-            "Give Facebook user box to explore old conversations by inputting date or searching message text without infinite scrolling up, also reveal first message.",
-            "Build requests with parameters of date, text or 1st message and nessesary token by injecting javascript code to webview to pull matching conversations.",
-            "Reached 145,000 downloads in total (on July 1st, 2019) with rate of 4.1, published on Sep 1, 2017 on Google Play."],
+            "Give Facebook user a box to explore old conversations by inputting date or searching message text without infinite scrolling up, also reveal the first message",
+            "Build requests with parameters of date, text or 1st message and necessary token by injecting javascript code to webview to pull matching conversations",
+            "Reached 145,000 downloads in total (on July 1st, 2019) with a rate of 4.1, published on Sep 1, 2017, on Google Play"],
         link: [
             {name: "Google Play", href: "https://play.google.com/store/apps/details?id=com.tbs.fbha"}
         ],
@@ -21,9 +21,9 @@ const personalProjects = [
         icon: pynoIcon
     },
     {   name: "Poppop",
-        descriptionName: "Mini game",
-        content: ["Implemented a mini game with simple graphic included animation and sound.",
-            "Reach 430,000 downloads in total (on July 1st, 2019) with rate of 4.3, published on Jun 1, 2016."],
+        descriptionName: "Mini-game",
+        content: ["Implemented a mini-game with simple graphic included animation and sound",
+            "Reach 430,000 downloads in total (on July 1st, 2019) with a rate of 4.3, published on Jun 1, 2016"],
         link: [
             {name: "Google Play", href: "https://play.google.com/store/apps/details?id=com.tbs.poppop"},
             {name: "App Store", href: "https://apps.apple.com/vn/app/bop-bop/id1326031239"}
@@ -32,8 +32,8 @@ const personalProjects = [
         icon: poppopIcon
     },
     {   name: "Lazico",
-        descriptionName: "Android Application drive connected device via sms",
-        content: ["The App allows user send or receive command/response (generated from UI/device with sim module) via sms formated by an unified syntax",
+        descriptionName: "Android Application drive connected device via SMS ",
+        content: ["The App allows user send or receive command/response (generated from UI/device with sim module) via SMS formatted by a unified syntax",
             "The device is used widely in agriculture"],
         link: [
             {name: "Google Play", href: "https://play.google.com/store/apps/details?id=com.sms.lazico"},
@@ -55,14 +55,14 @@ const employers = [
         role: "Developer",
         href: "http://iotex.io",
         projects: [
-            {name: "Mobile Wallet App", href: "https://play.google.com/store/apps/details?id=io.iotex.iopay"},
-            {name: "Web Cryptipo Currency ", href: "https://iotexscan.io"},
+            {name: "Mobile Wallet App", href: "https://play.google.com/store/apps/details?id=io.iotex.iopay.prod"},
+            {name: "Web Crypto Currency ", href: "https://iotexscan.io"},
         ],
         content: [
-            "Implement features of Android Wallet: components following MVVM pattern on Android room or Apollo client Graphql, authentication with pin code or finger printer, QR code scanning",
+            "Implement features of Android Wallet: components following MVVM pattern on Android room or Apollo client Graphql, authentication with pin code or fingerprinter, QR code scanning",
             'Implement components interacting with smart contract ABI through an Antena of grpc protocol in Android Wallet app, server-side and client-side (<a href="https://member.iotex.io" target="_blank">member.iotex.io</a> and <a href="https://iotexscan.io" target="_blank">iotexscan.io</a>)',
-            'Implement shared data-view components with reactjs, redux, ant design (<a href="https://member.iotex.io" target="_blank">member.iotex.io</a>, <a href="https://iotexscan.io" target="_blank">iotexscan.io</a>, <a href="https://docs.iotex.io" target="_blank">docs.iotex.io</a>, <a href="https://forum.iotex.io" target="_blank">forum.iotex.io</a> and <a href="https://v1.iotex.io" target="_blank">v1.iotex.io</a>)',
-            'Implement graphql resolver, proxy, sendgrid and faucet function (<a href="https://member.iotex.io" target="_blank">member.iotex.io</a> and <a href="https://iotexscan.io" target="_blank">iotexscan.io</a>) interacting with mongoDb, 3rd service endpoint or smart constract',
+            'Implement shared data-view components with reactjs, redux, ant design (<a href="https://member.iotex.io" target="_blank">member.iotex.io</a>, <a href="https://iotexscan.io" target="_blank">iotexscan.io</a>, <a href="https://docs.iotex.io" target="_blank">docs.iotex.io</a>, <a href="https://forum.iotex.io" target="_blank">forum.iotex.io</a>, and <a href="https://v1.iotex.io" target="_blank">v1.iotex.io</a>)',
+            'Implement graphql resolver, proxy, sendgrid and faucet function (<a href="https://member.iotex.io" target="_blank">member.iotex.io</a> and <a href="https://iotexscan.io" target="_blank">iotexscan.io</a>) interacting with MongoDB, 3rd service endpoint or smart contract',
         ],
         icon: iotexIcon,
         utilized: ["JAVA", "JS", "Kotlin", "Android", "NodeJs", "git", "ReactJs", "OOP", "MVVM", "Android Room", "UNIX", "Ant Design", "Graphql", "MongoDB", "ABI", "Smart Contract", "grpc"]
@@ -82,9 +82,9 @@ const employers = [
             {name: "Energy Builder on MS Sqlserver", href: "https://edv3.energybuilder.co/"},
         ],
         content: [
-            'Develop package on Laravel, be plugable with Mysql, Sqlserver and Oracle: migrate data and build base classes enable unique query or mutation work with these database',
-            'Design and implement mechanism in herachy for submiting inputted data, calculate formulars regard to chemical or storage fields during flushing to database',
-            'Implement features: sending email, export to excel, html or pdf, schedule tasks using queue or cronjob technical and common shared components',
+            'Develop package on Laravel, be pluggable with Mysql, Sqlserver, and Oracle: migrate data and build base classes enable unique query or mutation work with these databases',
+            'Design and implement the mechanism in a hierarchy for submitting inputted data, calculate formulas regard to chemical or storage fields during flushing to database',
+            'Implement features: sending emails, export to excel, Html or pdf, schedule tasks using queue technical or cronjob and commonly shared components',
             'Lead a team of 3 members in charge: triage  daily tasks, support them to resolve issues',
             'Communicate with customers and propose solutions matching to their requirements',
         ],
@@ -101,19 +101,22 @@ const employers = [
         role: "Developer",
         href: "https://altplus.com.vn/",
         projects: [
-            {name: "Summon Night Collection", href: "https://www.siliconera.com/2013/08/17/summon-night-collection-surpasses-350000-subscribers/"},
+            {   name: "Summon Night Collection",
+                subTitle: "onsite Tokyo",
+                href: "https://www.siliconera.com/2013/08/17/summon-night-collection-surpasses-350000-subscribers/",
+            },
             {name: "LIFULL HOME'S B2B", href: "https://www.homes.co.jp/pro/bb/"},
 
         ],
         content: [
-            'Implement features: authenticate, fetch or update data using REST API of saleforce SDK for both versions of hibryd (cordova, angularjs) and native Android app',
+            'Implement features: authenticate, fetch or update data using REST API of Saleforce SDK for both versions of hybrid (Cordova, angularjs) and native Android app',
             'Create customized views and widget for features: newsfeed, comments, poll and rate',
             'Lead Android team of 4 members in charge: triage daily tasks, support them to resolve issues',
             'Implement and maintain back-end of Summon Night game includes release ticket, gacha or event daily, weekly  and skills or unique skills of cards',
             'Investigate, fix and compensate user feedback issues',
         ],
         icon: altplusIcon,
-        utilized: [ "PHP", "js/html", "HASUNOHA", "Mysql", "Java", "AngularJs", "Android",  "git", "OOP"]
+        utilized: [ "PHP", "js/Html", "HASUNOHA", "Mysql", "Java", "AngularJs", "Android",  "git", "OOP"]
     },
     {
         id: "ivc",
@@ -126,15 +129,15 @@ const employers = [
         href: "http://www.isb-vietnam.com.vn/home",
         projects: [
             {name: "Mobile Digital Marketing Application", href: "https://www.youtube.com/watch?v=yMCjXlLDXhk"},
-            {name: "Securities  Application", href: "http://www.isb-vietnam.com.vn/home#casestudies"},
+            {name: "Securities Application", href: "http://www.isb-vietnam.com.vn/home#casestudies"},
             {name: "Render application on Sony Smartwatch 2"},
-            {name: "Outsource Projects"},
+            {name: "Outsourced Projects"},
         ],
         content: [
             'Design UML diagrams such as sequence diagram or class diagram for Android and iOs app include component views, google map, camera, facebook sdk then implement',
-            'Implement views and widget in Sony Smartwatch 2 project: media list of image, trailer video and animation',
-            'Implement views and widget in Sercutities Application on MacOs: fetching data and animation',
-            'Implement and write unit test in back-end of card game: reading and writing data for logic game',
+            'Implement views and widget in Sony Smartwatch 2 project: media list of image, trailer video, and animation',
+            'Implement views and widget in Securities Application on MacOs: fetching data and animation',
+            'Implement and write unit test in back-end of card game: reading and writing data for logic of game',
         ],
         icon: ivcIcon,
         utilized: [  "Java", "Android", "UML", "Objective C", "git", "OOP"]
@@ -203,6 +206,13 @@ var renderProjects = function(projects, root){
                 .addClass('.profile-detail')
                 .css({"color" : "black"})
                 .text(cval.name)
+                .appendTo(root);
+        }
+
+        if (cval.subTitle){
+            $('<span/>')
+                .addClass('.profile-detail')
+                .text(" - "+cval.subTitle)
                 .appendTo(root);
         }
         if (ckey < projects.length-1) root.append(", ");
