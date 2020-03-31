@@ -17,7 +17,7 @@ const personalProjects = [
         link: [
             {name: "Google Play", href: "https://play.google.com/store/apps/details?id=com.tbs.fbha"}
         ],
-        utilized: ["Java", "JS", "Android", "Google Billing", "Google Admob"],
+        utilized: ["Java", "JS", "Android", "Google Billing", "Google Admob", "Fabric Crashlytics"],
         icon: pynoIcon
     },
     {   name: "Poppop",
@@ -28,7 +28,7 @@ const personalProjects = [
             {name: "Google Play", href: "https://play.google.com/store/apps/details?id=com.tbs.poppop"},
             {name: "App Store", href: "https://apps.apple.com/vn/app/bop-bop/id1326031239"}
         ],
-        utilized: ["Android", "iOS", "Java", "Swift 3", "Google Admob", "Xcode", "andEngine", "SpriteKit"],
+        utilized: ["Android", "iOS", "Java", "Swift 3", "Google Admob", "Fabric Crashlytics", "Xcode", "andEngine", "SpriteKit"],
         icon: poppopIcon
     },
     {   name: "Lazico",
@@ -36,10 +36,10 @@ const personalProjects = [
         content: ["The App allows user send or receive command/response (generated from UI/device with sim module) via SMS formatted by a unified syntax",
             "The device is used widely in agriculture"],
         link: [
-            {name: "Google Play", href: "https://play.google.com/store/apps/details?id=com.sms.lazico"},
+            {name: "Apk App", href: "http://lazico.com/lazico_download.html"},
             {name: "Connected Devices", href: "http://lazico.com/san-pham"},
         ],
-        utilized: ["Android", "Java", "kotlin", "Android Room", "MVVM" ],
+        utilized: ["Android", "Java", "kotlin", "Android Room", "Fabric Crashlytics", "MVVM" ],
         icon: lazicoIcon
     }
 ];
@@ -65,7 +65,7 @@ const employers = [
             'Implement graphql resolver, proxy, sendgrid and faucet function (<a href="https://member.iotex.io" target="_blank">member.iotex.io</a> and <a href="https://iotexscan.io" target="_blank">iotexscan.io</a>) interacting with MongoDB, 3rd service endpoint or smart contract',
         ],
         icon: iotexIcon,
-        utilized: ["JAVA", "JS", "Kotlin", "Android", "NodeJs", "git", "ReactJs", "OOP", "MVVM", "Android Room", "UNIX", "Ant Design", "Graphql", "MongoDB", "ABI", "Smart Contract", "grpc"]
+        utilized: ["JAVA", "JS", "Kotlin", "Android", "NodeJs", "git", "ReactJs", "OOP", "MVVM", "Android Room", "Firebase Crashlytics", "UNIX", "Ant Design", "Graphql", "MongoDB", "ABI", "Smart Contract", "grpc"]
     },
     {
         id: "energybuilder",
