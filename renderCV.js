@@ -8,20 +8,56 @@ const poppopIcon = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAA
 const lazicoIcon = "data:image/png;base64,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";
 
 const personalProjects = [
+	{   name: "Trio",
+        descriptionName: "Trio (Multiplayer Puzzle Game)",
+        link: [
+			{name: "Google Play", href: "https://play.google.com/store/apps/details?id=com.tbs.trio"},
+            {name: "Web", href: "https://dragonballtrio.web.app/"}
+        ],
+        icon: "./icons/trio.png",
+		skills: "TypeScript · React Native · React.js · Firebase · iOS Development · Android Development · GitHub Copilot · Webpack · Git", 
+		tasks: [
+			"Developed a real-time multiplayer puzzle game for Android, iOS, and Web from a single shared React Native codebase.",
+			"Utilized Firebase (Realtime Database, Functions) to power the serverless backend for real-time game match management and data storage.",
+			"Implemented core logic on Firebase Functions for match creation, push notifications, and secure in-app purchase/subscription verification.",
+			"Integrated Deep Linking, real-time messaging chat, Google AdMob, and in-app purchase/subscription features."
+		]		
+    },
+	{   name: "Dog vs. Cat",
+        descriptionName: "Dog vs. Cat Game (2D Fighting Game)",
+        link: [
+            {name: "App Store", href: "https://apps.apple.com/us/app/dog-vs-cat/id6450649625"}
+        ],
+        icon: "./icons/dogvscat.png",
+		skills: "TypeScript · Cocos2d · React Native · C++ · iOS Development · Android Development · Firebase · Webpack · Git", 
+		tasks: [
+			"Developed a 2D fighting game for Android and iOS with a unique cross-platform architecture: Cocos2dx for core graphics and React Native for game flow, UI, and connecting features.",
+			"Engineered the backend using a Serverless architecture with Firebase (Realtime Database, Storage, Functions).",
+			"Implemented core game logic on Firebase Functions for creating/finishing matches, pushing notifications, and secure transactional actions (reward validation, in-app purchase verification).",
+			"Integrated Deep Linking, real-time messaging chat, Google AdMob, and in-app purchase features."
+		]		
+    },
     {   name: "Pyno",
-        descriptionName: "App Chat History For Facebook on Android",
+        descriptionName: "Pyno (Facebook Chat History Explorer)",
         content: [
             "Give Facebook user a box to explore old conversations by inputting date or searching message text without infinite scrolling up, also reveal the first message",
             "Build requests with parameters of date, text or 1st message and necessary token by injecting javascript code to webview to pull matching conversations",
             "Reached 145,000 downloads in total (on July 1st, 2019) with a rate of 4.1, published on Sep 1, 2017, on Google Play"],
         link: [
-            {name: "Google Play", href: "https://play.google.com/store/apps/details?id=com.tbs.fbha"}
+            // {name: "Google Play", href: "https://play.google.com/store/apps/details?id=com.tbs.fbha"}
         ],
         utilized: ["Java", "JS", "Android", "Google Billing", "Google Admob", "Fabric Crashlytics"],
-        icon: pynoIcon
+        icon: pynoIcon,
+		skills: "Java · Swift · JavaScript · Android Development · iOS Development · AdMob · Git", 
+		tasks: [
+			"Developed an Android application to allow users to efficiently search and explore old Facebook conversations by date or text, bypassing infinite scrolling.",
+			"Built the core mechanism by injecting JavaScript code into a webview to construct requests and extract matching conversation data.",
+			"Integrated monetization via Google AdMob, Google Billing and StoreKit of Apple.",
+			"Secured 145k+ downloads on Google Play (4.1 rating). It was retired since Facebook changed its API of messages with End-to-End Encryption and no longer support old version of mobile browser."
+		]		
     },
     {   name: "Poppop",
-        descriptionName: "Mini-game",
+        descriptionName: "PopPop (Mobile Mini-Game)",
         content: ["Implemented a mini-game with simple graphic included animation and sound",
             "Reach 430,000 downloads in total (on July 1st, 2019) with a rate of 4.3, published on Jun 1, 2016"],
         link: [
@@ -29,33 +65,76 @@ const personalProjects = [
             {name: "App Store", href: "https://apps.apple.com/vn/app/bop-bop/id1326031239"}
         ],
         utilized: ["Android", "iOS", "Java", "Swift 3", "Google Admob", "Fabric Crashlytics", "Xcode", "andEngine", "SpriteKit"],
-        icon: poppopIcon
-    },
-    {   name: "Lazico",
-        descriptionName: "Android Application drive connected device via SMS ",
-        content: ["The App allows user send or receive command/response (generated from UI/device with sim module) via SMS formatted by a unified syntax",
-            "The device is used widely in agriculture"],
-        link: [
-            {name: "Apk App", href: "http://lazico.com/lazico_download.html"},
-            {name: "Connected Devices", href: "http://lazico.com/san-pham"},
-        ],
-        utilized: ["Android", "Java", "kotlin", "Android Room", "Fabric Crashlytics", "MVVM" ],
-        icon: lazicoIcon
+        icon: poppopIcon,
+		skills: "Java · Swift · JavaScript · Android Development · iOS Development · AdMob · Git", 
+		tasks: [
+			"Implemented a cross-platform mini-game for Android (using Java/AndEngine) and iOS (using Swift 3/SpriteKit) with graphics, animation, and sound.",
+			"Secured 700k+ downloads on Google Play (4.1 rating) and 39k+ (3.8 rating) on the App Store.",
+			"Integrated Google AdMob for monetization."
+		] 
     }
 ];
 
 const employers = [
+{
+        id: "freelancer",
+        name: "Self-employed",
+        descriptionName: "Focused on Small Business Solutions and App Store Product Launches.",
+        startTime: "2021-03",
+        endTime: "Present",
+        location: "at Home",
+        role: "Full-Stack Developer",
+        projects: [
+            {name: "IOT platform for Lazico", href: "https://lazico.com/iotapp"},
+            {name: "Personal Apps and games"},
+        ],
+		workingProjects: [
+            {	name: "CRM (Custom Commercial CRM System)",
+				startTime: "2024-11",
+				endTime: "Present",
+				role: "Full-Stack Developer & DevOps", 
+				skills: "TypeScript · CodeIgniter · PHP · React.js · Firebase · GitHub Copilot · MySQL · REST APIs · Docker · Linux Server · HAProxy · Webpack · Vite", 
+				tasks: [
+					"Implemented customized business flows by mapping customer service scenarios into stateful orders (10-20 states, manual/automatic updates).",
+					"Enhanced communication services by implementing features for staff to create and schedule custom Email/SMS templates.",
+					"Integrated a new Firebase Authentication mechanism to enable single sign-on across the CRM and external business websites.",
+					"Developed shared React components for embedding into the CRM and external sales websites (e.g., authentication, order creation).",
+					"Packaged the system using Docker and deployed it to a single cloud server behind HAProxy as a system gateway.",
+				] 
+			},
+            {	name: "Lazico (IoT Service Platform)",
+				startTime: "2021-03",
+				endTime: "Present",
+				role: "Full-Stack Developer & DevOps", 
+				skills: "TypeScript · java · React Native · React.js · Spring MVC · Android Development · iOS Development · Firebase · Docker · Cassandra · PostgreSQL · REST APIs · HAProxy · Linux Server · Git", 
+				tasks: [
+					"Designed and implemented core backend services (device/user/admin management, OTA upgrade) with a focus on device data triggers and user interactions.",
+					"Integrated Firebase for a seamless, token-based Authentication mechanism supporting Google, Facebook, and Apple sign-in, and utilized Firebase for Push Notifications.",
+					"Developed a cross-platform (Android, iOS, Web) application from a single React Native codebase, including a shared package for three platforms.",
+					"Implemented device claiming via ESP-TOUCH protocol (Smart Config) using a native React Native module bridge.",
+					"Managed DevOps using Docker for deployment to a single cloud server, including resolving server resource issues (e.g., IPv6 resolution, storage capacity scripts).",
+				] 
+			},
+        ],
+        content: [
+            "Implement and deploy IOT platform base on Thingsboard - Java based open source with enhance feature: authentication using 3rd provider base on firebase module, share devices to users, and management lifecycle of device, package solution with docker and tracking issues ...",
+            'Implement and deploy IOT user-end application includes mobile (Android and iOS) and web app: authentication, handle device management: connect, claim, config, control and remove and UI interactive using React Native Web and firebase integration',
+            'Maintain my personal Apps and Games. Writing some casual tools',
+        ],
+        icon: "./icons/meovac.png",
+        utilized: ["NodeJs",  "firebase","React Native",  "Typescript","JAVA", "Spring MVC", "Docker", "Cassandra", "Posgresql" ,"Kotlin", "Android", "iOS" ]
+    },
     {
         id: "iotex",
         name: "IoTeX",
         descriptionName: "A Decentralized Network for Internet of Things",
         startTime: "2018-10",
-        endTime: "Present",
+        endTime: "2021-02",
         location: "Remote",
-        role: "Developer",
+        role: "Full-Stack Developer (Mobile, Web, Backend)",
         href: "http://iotex.io",
         projects: [
-            {name: "Mobile Wallet App", href: "https://play.google.com/store/apps/details?id=io.iotex.iopay.prod"},
+            {name: "Mobile Wallet App", href: "https://play.google.com/store/search?q=iopay&c=apps"},
             {name: "Web Crypto Currency ", href: "https://iotexscan.io"},
         ],
         content: [
@@ -64,18 +143,30 @@ const employers = [
             'Implement shared data-view components with reactjs, redux, ant design (<a href="https://member.iotex.io" target="_blank">member.iotex.io</a>, <a href="https://iotexscan.io" target="_blank">iotexscan.io</a>, <a href="https://docs.iotex.io" target="_blank">docs.iotex.io</a>, <a href="https://forum.iotex.io" target="_blank">forum.iotex.io</a>, and <a href="https://v1.iotex.io" target="_blank">v1.iotex.io</a>)',
             'Implement graphql resolver, proxy, sendgrid and faucet function (<a href="https://member.iotex.io" target="_blank">member.iotex.io</a> and <a href="https://iotexscan.io" target="_blank">iotexscan.io</a>) interacting with MongoDB, 3rd service endpoint or smart contract',
         ],
+		workingProjects: [
+            {	
+				skills: "Android Development · iOS Development · TypeScript · Kotlin · reactjs · Swift · Node.js · Git · Model-view-viewmodel (MVVM) · Apollo GraphQL · MongoDB · gRPC · Next.js · Vite · Webpack · ABI", 
+				tasks: [
+					"Implemented Android Wallet features using MVVM, Android Room, and GraphQL/Apollo Client for data management. Included pin/fingerprint authentication and QR code scanning.",
+					"Developed iOS Wallet features using GraphQL and Apollo Client for efficient data management, while ensuring application stability through rigorous debugging.",
+					"Developed client-side and server-side components to interact with smart contract ABI via an Antena gRPC protocol.",
+					"Built responsive, shared data-view components for web using ReactJS, Redux, and Ant Design.",
+					"Engineered backend functions including GraphQL resolver, proxy, SendGrid, and faucet functionality, integrating with MongoDB, 3rd-party services, and smart contracts.",
+				] 
+			}
+        ],
         icon: iotexIcon,
-        utilized: ["JAVA", "JS", "Kotlin", "Android", "NodeJs", "git", "ReactJs", "OOP", "MVVM", "Android Room", "Firebase Crashlytics", "UNIX", "Ant Design", "Graphql", "MongoDB", "ABI", "Smart Contract", "grpc"]
+        utilized: ["JAVA", "JS", "Kotlin", "Android", "NodeJs",  "ReactJs", "OOP", "MVVM", "Android Room", "Firebase Crashlytics", "UNIX", "Ant Design", "Graphql", "MongoDB", "ABI", "Smart Contract", "grpc"]
     },
     {
         id: "energybuilder",
-        name: "eDataViz",
-        descriptionName: "Hydrocarbon accounting production software package",
+        name: "Energy Builder (Data Management Platform)",
+        descriptionName: "eDataViz",
         startTime: "2016-01",
         endTime: "2018-10",
         location: "Hanoi",
-        role: "Developer",
-        href: "https://edataviz.com/",
+        role: "Full-stack Developer",
+        href: "https://energybuilder.co/",
         projects: [
             {name: "Energy Builder on Mysql", href: "https://energybuilder.co/"},
             {name: "Energy Builder on Oracle", href: "https://edv2.energybuilder.co/"},
@@ -88,8 +179,19 @@ const employers = [
             'Lead a team of 3 members in charge: triage  daily tasks, support them to resolve issues',
             'Communicate with customers and propose solutions matching to their requirements',
         ],
+		workingProjects: [
+            {	
+				skills: "PHP · Laravel · MySQL · Microsoft SQL Server · Oracle Database · Windows Server · Git", 
+				tasks: [
+					"Developed a pluggable package on Laravel to enable unique queries and data migration across MySQL, SQL Server, and Oracle.",
+					"Designed and implemented a hierarchical mechanism for high-integrity data submission and complex formula calculations (chemical/storage fields).",
+					"Implemented general features like email sending, export (Excel, PDF), and scheduled tasks using queue technology/cronjobs.",
+					"Led a team of 3 members: managed task triage, issue resolution, support teammate and communicated directly with customers in technical solutions and release the software updates.",
+				] 
+			}
+        ],
         icon: edataVizIcon,
-        utilized: [ "PHP", "JS/HTML", "LARAVEL", "SQL", "MYSQL", "SQLSERVER", "ORACLE", "git", "OOP"]
+        utilized: [ "PHP", "JS/HTML", "LARAVEL", "SQL", "MYSQL", "SQLSERVER", "ORACLE",  "OOP"]
     },
     {
         id: "altplus",
@@ -115,8 +217,32 @@ const employers = [
             'Implement and maintain back-end of Summon Night game includes release ticket, gacha or event daily, weekly  and skills or unique skills of cards',
             'Investigate, fix and compensate user feedback issues',
         ],
+		workingProjects: [
+            {	name: "LIFULL HOME'S B2B (Real Estate App)",
+				startTime: "2015-01",
+				endTime: "2015-10",
+				role: "Android Developer", 
+				skills: "java · Android Development · Angular · REST APIs · Git", 
+				tasks: [
+					"Implemented core features (authentication, data fetch/update) using REST API with Salesforce SDK for both Hybrid (Cordova/AngularJS) and Native Android applications.",
+					"Created customized native UI components for features like newsfeed, comments, and polling.",
+					"Be key member of the Android development team of 3: managed daily tasks and provided technical support.",
+				] 
+			},
+            {	name: "SUMMON NIGHT - Collectible Card Game Backend",
+				startTime: "2013-10",
+				endTime: "2014-12",
+				role: "Backend Maintenance Developer", 
+				skills: "PHP · MySQL · Git · JavaScript · HTML · Cascading Style Sheets (CSS)", 
+				tasks: [
+					"Maintained and supported a large-scale strategy Collectible Card Game (CCG) deployed on the Gree and Mobage platforms.",
+					"Responsibilities included releasing event items/tickets, investigating and fixing bugs, implementing new features (e.g., card unique skills, login back logic), and supporting customer service.",
+					"Contributed to the project during a 3-month on-site assignment in Tokyo."				
+				] 
+			},
+        ],
         icon: altplusIcon,
-        utilized: [ "PHP", "js/Html", "HASUNOHA", "Mysql", "Java", "AngularJs", "Android",  "git", "OOP"]
+        utilized: [ "PHP", "js/Html", "HASUNOHA", "Mysql", "Java", "AngularJs", "Android",   "OOP"]
     },
     {
         id: "ivc",
@@ -139,6 +265,59 @@ const employers = [
             'Implement views and widget in Securities Application on MacOs: fetching data and animation',
             'Implement and write unit test in back-end of card game: reading and writing data for logic of game',
         ],
+		workingProjects: [
+            {	name: "Azoracamera (Social Photo/Recipe App)",
+				startTime: "2013-01",
+				endTime: "2013-07",
+				role: "Android Developer", 
+				skills: "Android Development · java · Facebook API · Git", 
+				tasks: [
+					"Developed an Android application focused on user-created food recipes and photos, allowing sharing on Facebook.",
+					"Implemented GUI components, handled data retrieval/posting, and integrated the Facebook SDK."
+				] 
+			},
+            {	name: "PENGUINE 9 (Securities Application)",
+				startTime: "2012-05",
+				endTime: "2012-12",
+				role: "macOS Developer (Objective-C)", 
+				skills: "Objective-C · macOS · Git", 
+				tasks: [
+					"Developed a security application for MacOS (10.6+) focused on real-time trend monitoring and order placement.",
+					"Implemented sophisticated GUI components (charts, animation) and handled data loading/posting from the server using Objective-C."				
+				] 
+			},
+			{	name: "FTJDMC (Smartwatch Controller App)",
+				startTime: "2012-03",
+				endTime: "2012-04",
+				role: "Android Developer", 
+				skills: "java · Android Development", 
+				tasks: [
+					"Implemented an application for the Sony Smartwatch 1 to remotely control home multimedia devices (DLNA/DMS devices).",
+					"Focused on implementing GUI components on the watch screen and documenting the features."				
+				] 
+			},
+			{	name: "iSpreader (Mobile Digital Marketing App)",
+				startTime: "2011-07",
+				endTime: "2012-03",
+				role: "Mobile Developer (Android/iOS)", 
+				skills: "java · Objective-C · Object-Oriented Programming (OOP) · Google Maps API · Facebook API · Unified Modeling Language (UML) · Git · SQLite", 
+				tasks: [
+					"Developed a digital marketing application that broadcasts news and media to mobile devices on the same Wi-Fi network (no internet required).",
+					"Involved in the full lifecycle (design to maintenance), including writing UML documentation.",
+					"Implemented various mobile functions: view components, camera integration, Google Maps SDK, Facebook SDK integration, SQLite database querying, and local data broadcasting."				
+				] 
+			},
+			{	name: "BRUTE (Card Game Backend)",
+				startTime: "2011-09",
+				endTime: "2011-12",
+				role: "Backend Developer", 
+				skills: "java · MySQL · Unit Testing", 
+				tasks: [
+					"Contributed to the implementation phase of the Java-based internal framework backend for an outsourced card game.",
+					"Wrote unit tests and implemented game functions focused on querying and updating user, card, and battle data in the database, with responses in JSON format."				
+				] 
+			},
+        ],
         icon: ivcIcon,
         utilized: [  "Java", "Android", "UML", "Objective C", "git", "OOP"]
     },
@@ -155,7 +334,7 @@ const skills = {
         },
     };
 
-const totalSkills = ["Java", "PHP", "js", "SQL", "html/css", "Kotlin", "Android",  "Laravel", "OOP","UML",  "git","ReactJs","nodeJs", "MVVM",  "Mysql", "SQLServer", "Oracle","Graphql","iOS", "swift", "Objective C", "Smart Contract"];
+const totalSkills = [ "Typescript", "Java", "PHP", "js", "SQL", "html/css", "Kotlin", "Android",  "Laravel", "OOP","UML",  "git","ReactJs","NodeJs",  "firebase","React Native",  "Typescript","JAVA", "Spring MVC", "Docker", "Cassandra", "Posgresql", "MVVM",  "Mysql", "SQLServer", "Oracle","Graphql","iOS", "swift", "Objective C", "Smart Contract"];
 
 var renderSkills = function(totalSkills){
     var splitCharacter = "";
@@ -220,6 +399,44 @@ var renderProjects = function(projects, root){
     root.append(")");
 }
 
+var renderWorkingProjects = function(workingProjects, root){
+	var isMultiple = workingProjects.length > 1;
+	if(isMultiple) $('<h4 class="mt2"/>').text("Projects").appendTo(root);
+    $.each(workingProjects, function (ckey, wproject) {
+		var shouldAdd = wproject.name || wproject.startTime || wproject.location  || wproject.role;
+		if(shouldAdd){
+			var div = $('<h4 class="pv-entity__date-range t-14 t-black--light t-normal mt2"/>');
+			if(wproject.name) div.append($('<b/>').text((ckey+1)+". "+wproject.name));
+			if(wproject.role) div.append($('<b class="pv-entity__bullet-item-v2"/>').text(wproject.role));
+			/*
+			if(wproject.startTime) {
+				var workingTime =  getDateText(wproject.startTime , wproject.endTime);
+				div.append($('<b class="pv-entity__bullet-item-v2"/>').text(workingTime.text))
+					.append($('<b class="pv-entity__bullet-item-v2"/>').text(workingTime.duration));
+			}
+			*/
+			if(wproject.location) div.append($('<b class="pv-entity__bullet-item-v2"/>').text(wproject.location));
+			div.appendTo(root);
+		}
+		var contentDiv = $('<div />').appendTo(root);
+		$('<p/>')
+			.addClass('.profile-detail')
+			.css({"line-height": "1.6", "font-size": "14px"})
+			.html("<b>Skills: "+wproject.skills + "</b>")
+			.appendTo(contentDiv);
+			
+        $.each(wproject.tasks, function (tKey, task) {
+			$('<p/>')
+				.addClass('.profile-detail')
+				.css({"line-height": "1.6", "font-size": "13px", align : "justify"})
+				.html("• "+task)
+				.appendTo(contentDiv);
+		});
+		
+    });
+}
+
+
 var renderContent = function(contents, utilized, root){
     $.each(contents, function (ckey, cval) {
         $('<p/>')
@@ -231,10 +448,11 @@ var renderContent = function(contents, utilized, root){
 
     $('<p/>')
         .addClass('.profile-detail')
-        .css({"line-height": "1.6", "font-size": "15px"})
-        .html(" - Utilized: <b>"+utilized.join(", ") + "</b>")
+        .css({"line-height": "1.6", "font-size": "14px"})
+        .html("<b>Skills: "+utilized.join(", ") + "</b>")
         .appendTo(root);
 }
+
 
 var experienceContentDiv =  $("#ExperienceContent");
 $.each(employers, function (key, val) {
@@ -256,23 +474,23 @@ $.each(employers, function (key, val) {
         .appendTo(li);
     $('<h3 class="t-16 t-black t-bold"/>').text(val.role).appendTo(contentDiv);
     $('<h4 class="t-16 t-black t-normal"/>')
-        .append($('<span class="pv-entity__secondary-title"/>').append($('<a href="'+val.href+'" target="_blank"/>').text(val.name)))
+        .append($('<span class="pv-entity__secondary-title"/>').append($('<a'+ (val.href ? (' href="'+ (val.href || '#') +'"'):'') +' target="_blank"/>').text(val.name)))
         .append($('<span class="pv-entity__secondary-title pv-entity__bullet-item-v2"/>').text(val.descriptionName))
         .appendTo(contentDiv);
 
-    var detailLine = $('<span class="pv-entity__bullet-item-v2"/>');
-    renderProjects(val.projects, detailLine);
+    // var detailLine = $('<span class="pv-entity__bullet-item-v2"/>');
+    // renderProjects(val.projects, detailLine);
 
     var workingTime =  getDateText(val.startTime, val.endTime);
     $('<h4 class="pv-entity__date-range t-14 t-black--light t-normal"/>')
         .append($('<span />').text(workingTime.text))
         .append($('<span class="pv-entity__bullet-item-v2"/>').text(workingTime.duration))
         .append($('<span class="pv-entity__bullet-item-v2"/>').text(val.location))
-        .append(detailLine)
+        //.append(detailLine)
         .appendTo(contentDiv);
 
     var contentDiv = $('<div />').css("margin-top", "5px").appendTo(contentDiv);
-    renderContent(val.content, val.utilized, contentDiv);
+    renderWorkingProjects(val.workingProjects, contentDiv);
 
 });
 
@@ -313,5 +531,7 @@ $.each(personalProjects, function (key, val) {
         });
         links.appendTo(div);
     }
-    renderContent(val.content, val.utilized, contentContainer);
+	
+	renderWorkingProjects([{tasks: val.tasks, skills: val.skills}], contentContainer);
+    //renderContent(val.content, val.utilized, contentContainer);
 });
